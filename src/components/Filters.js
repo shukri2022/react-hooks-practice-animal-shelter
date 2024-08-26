@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Filters({ onChangeType, onFindPetsClick }) {
   const handleTypeChange = (event) => {
@@ -7,13 +7,21 @@ function Filters({ onChangeType, onFindPetsClick }) {
 
   return (
     <div className="ui filter">
-      <select onChange={handleTypeChange} defaultValue="all">
+      <select
+        className="ui selection dropdown"
+        onChange={handleTypeChange}
+        defaultValue="all"
+        aria-label="type"
+      >
         <option value="all">All</option>
         <option value="cat">Cats</option>
         <option value="dog">Dogs</option>
         <option value="micropig">Micropigs</option>
       </select>
-      <button className="ui primary button" onClick={onFindPetsClick}>
+      <button
+        className="ui primary button"
+        onClick={onFindPetsClick}
+      >
         Find pets
       </button>
     </div>
@@ -21,3 +29,4 @@ function Filters({ onChangeType, onFindPetsClick }) {
 }
 
 export default Filters;
+
