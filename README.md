@@ -1,5 +1,8 @@
 # Practice Challenge: Animal Shelter
-
+# Step 4: Running the Project
+Start the JSON server by running json-server --watch db.json --port 3001.
+Run the React development server using npm start.
+Test the application using npm test to ensure everything is working as expecte
 ## Overview
 
 You'll build a small React application where you'll update state in response to
